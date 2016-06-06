@@ -63,7 +63,7 @@ passertz(Fact) :- persistent_op(assertz(Fact)).
 pretract(Fact) :- persistent_op(retract(Fact)).
 pretractall(Fact) :- persistent_op(retractall(Fact)).
 
-plisting :- forall(persistent_predicate(P/A), listing(P/A)).
+plisting :- forall(persistent_predicate(P/A), listing(user:P/A)).
 
 :-
     % create persistent directory if not exists:
